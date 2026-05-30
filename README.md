@@ -38,18 +38,6 @@ The main landing page of the website featuring destination highlights and naviga
 
 ![Home Page 3](Petra.png)
 
-### Destination Selection
-
-Users can browse and choose their preferred destination.
-
-![Destination Selection](destination-selection.png)
-
-### Destination Information
-
-Detailed information about the selected destination including attractions and key highlights.
-
-![Destination Information](destination-details.png)
-
 ## Author
 
 Nour Sharabati
