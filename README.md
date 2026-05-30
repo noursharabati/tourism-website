@@ -36,7 +36,7 @@ The main landing page of the website featuring destination highlights and naviga
 
 ![Home Page 2](Page2.png)
 
-![Home Page 3](Page3.png)
+![Home Page 3](Petra.png)
 
 ### Destination Selection
 
