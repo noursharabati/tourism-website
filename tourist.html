@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Must-Visit Spots</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-bar {
+            background-color: #1fbdbd; 
+            color: white;
+            padding: 20px 0;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 20px;
+            margin: 20px;
+            padding: 0;
+        }
+
+        .gallery-item {
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%; 
+            height: 500px; 
+            object-fit: cover; 
+        }
+
+        .gallery-item p {
+            margin: 10px 0;
+            padding: 0 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-bar">
+       <h3> Discover hidden treasures and stunning destinations for your next trip</h3>
+    </div>
+
+    <div class="gallery">
+        <a href="page1.html" class="gallery-item">
+            <img src="eiffeltt.jpg" alt="Eiffel Tower">
+            <p>Eiffel Tower</p>
+        </a>
+        <a href="page2.html" class="gallery-item">
+            <img src="Pyramidss.jpg" alt="Egyptian pyramids">
+            <p>Egyptian pyramids</p>
+        </a>
+        <a href="page3.html" class="gallery-item">
+            <img src="petraa.jpg" alt="Petra">
+            <p>Petra</p>
+        </a>
+        <a href="page4.html" class="gallery-item">
+            <img src="tajmahal.jpg" alt="Taj Mahal">
+            <p> Taj Mahal</p>
+        </a>
+    </div>
+</body>
+</html>

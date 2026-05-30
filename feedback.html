@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #1fbdbd;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-size: 1.2em;
+            margin-top: 10px;
+            display: block;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1em;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            background-color: #1fbdbd;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #17a8a8;
+            transform: scale(1.05);
+        }
+
+        .thank-you-message {
+            display: none;
+            font-size: 1.5em;
+            color: #27ae60;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Your Feedback is Important to Us</h1>
+        <p>Tell us your thoughts so we can continue to improve your experience</p>
+        
+        <!-- Customer Feedback Form -->
+        <form action="thank-you.html" method="post" onsubmit="showThankYouMessage(event)">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" required placeholder="Enter your feedback here"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Thank You Message -->
+        <div class="thank-you-message" id="thank-you-message">
+            Thank you for your feedback!
+        </div>
+    </div>
+
+    <script>
+        function showThankYouMessage(event) {
+            event.preventDefault(); 
+            document.querySelector('.thank-you-message').style.display = 'block';
+            setTimeout(function() {
+                window.location.href = "thank-you.html"; 
+            }, 2000);
+        }
+    </script>
+
+</body>
+</html>

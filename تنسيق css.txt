@@ -1,0 +1,298 @@
+/* cssتنسيق لل هيد   في الصفحة الاولى  */
+header {
+  text-align: center;
+
+  justify-content: center; 
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  background-color: #f4f4f4;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 80px; 
+  height: auto;
+  margin-right: 30px;
+}
+/* تنسيق للنموذج كامل  */
+section {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  font-size: 16px;
+}
+ /* تنسيق ال  form */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #c13540;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #a12e37;
+}
+
+/* إضافة تباين وتحسين في الشكل */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #c13540;
+}
+
+/* bodyتنسيق كامل لل */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6 ;
+    direction: rtl;
+    margin: 20px;
+    background-color: #f0ede9f0;
+  
+}
+ /* تنسيق لجميع العناوين والفقرات  */
+h1, h2 {
+  font-family: 'Courier New', Courier, monospace;
+ font-weight: 250px;
+  font-size: 40px;
+  text-align: center;
+  color: #c13540;
+  margin: 10px;
+
+}
+
+p {
+  font-size: 25px;
+margin-top: 50px;
+margin-left: 50px; 
+
+}
+
+ /* بداية التنسيق لل main والبطافات  */
+.recipe-card {
+   
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  border: 1px solid #b63030;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #ffffff;
+  
+  box-shadow: 0 2px 8px rgba(0, 0, 0,0.1);
+ 
+}
+/* المسئولة عن الحركة للبطاقة  */
+  .recipe-card:hover {
+    transform: scale(1.05);
+}
+/* تنسيق الصور  */
+.recipe-images {
+   
+  height: auto;
+  overflow: hidden; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 10px;
+  background-color: #ffffff
+}
+
+.recipe-images img {
+ 
+  height: auto;  
+  display: block;
+  border-radius: 8px; 
+  transition: transform 0.3s ease; 
+}
+
+.recipe-images img:hover {
+  transform: scale(1.05); 
+}
+.recipe-details {
+  width: 65%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.recipe-title {
+  text-align: justify,center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  margin: 0 0 10px;
+  color: #6e1f18;
+  text-decoration: none;
+}
+
+.recipe-author {
+  font-size: 16px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.recipe-ingredients {
+  font-size: 20px;
+  color: #333;
+  line-height: 1.6;
+}  
+
+
+
+.recipe-title:hover {
+    text-decoration: underline;
+}
+
+.recipe-author {
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 0;
+}
+
+.recipe-ingredients {
+    font-size: 0.9em;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* نهاية تنسيق الcard 
+وبداية تنسيف table المقادير  */
+table {
+  width: 50%;
+
+  border-collapse: collapse;
+  margin-right: 30px;
+  float: right;
+  background-color: #dcdbdb;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);}
+ caption{
+  font-size: 30px;
+ }
+
+th, td {
+  font-size: 19px;
+  padding: 12px;
+  text-align: center;
+  border: 6px solid #898787;
+  vertical-align: middle;
+}
+
+tr:nth-child(even) {
+  background-color: #fffdfd;
+}
+ 
+ th {
+  background-color: #e44350;
+  color: white;
+}
+
+ul {
+  width: 45%;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+
+margin-left: 50px;   
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  float: right;
+  margin-left: 20px;
+} 
+
+ul li {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+  background-color: #f1f1f1;
+}
+
+ol {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+
+
+label {
+  font-weight: bold;
+}
+
+.input-box {
+  border: 2px solid #ccc; 
+  padding: 15px; 
+  border-radius: 8px; 
+  background-color: #f9f9f9; 
+  max-width: 400px; 
+  margin: 10px auto; 
+  float: right;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  position: bottom right;
+}
+
+.input-box label {
+  display: block;
+  margin-bottom: 8px; 
+  font-weight: bold; 
+  
+}
+
+.input-box input,
+.input-box textarea {
+  width: calc(100% - 10px); 
+  padding: 8px; 
+  margin-bottom: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  font-size: 16px; 
+
+}
+
+.input-box textarea {
+  height: 100px; 
+  resize: none; 
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: block;
+  }
+
+  table, ul {
+    width: 100%;
+    float: none;
+  }
+}
+
