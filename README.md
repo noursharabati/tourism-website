@@ -32,7 +32,7 @@ The website was designed to showcase international travel destinations through a
 
 The main landing page of the website featuring destination highlights and navigation options.
 
-![Home Page 1](Page1Home.png)
+![Home Page 1](page1Home.png)
 
 ![Home Page 2](Page2.png)
 
